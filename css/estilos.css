@@ -35,6 +35,9 @@ nav{
 	height: 500px;
 
 }
+.carrusel img:hover{
+	opacity: 0.5;
+}
 .cont1{
 	justify-content: center;
 	text-align: center;
@@ -71,8 +74,63 @@ nav{
 
 }
 .img5,.img6 ,.img7{
-	width: 30%;
+	width: 100%;
 	padding: 10px;
+}
+.carrito{
+	height: 20px;
+	width: 20px;
+	padding: 0px;
+}
+
+.centrado{
+    position: absolute;
+    top: 75%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    font-family: verdana;
+}
+.wrapper{
+	padding: 20px;
+  	display: grid;
+  	grid-template-columns: repeat(3, 1fr);
+
+}
+.wrapper .img5:hover{
+	opacity: 0.3;
+	border: solid 1px;
+	border-radius: 20px;
+}
+.wrapper .img6:hover{
+	opacity: 0.3;
+	border: solid 1px;
+	border-radius: 20px;
+}
+.wrapper .img7:hover{
+	opacity: 0.3;
+	border: solid 1px;
+	border-radius: 20px;
+}
+
+.formulario{
+	align-content: center;
+	text-align: center;
+	padding: 100px;
+	
+	border-radius: 20px;
+	border: solid 1px;
+
+}
+footer form{
+	text-align: center;
+	padding: 30px;
+	width: 40%;
+}
+
+footer iframe{
+	display: inline;
 }
 
 footer{
