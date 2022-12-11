@@ -1,52 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	<title>Restaurant Arg-Mex</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIO</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/8a815a169a.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-	<nav class="menu">
-		<ul>
-			<li id="logo"> <a href="#">ROCKSTARS</a></li>
-			<li id="item"><a href="index.html">Inicio</a></li>
-			<li id="item"><a href="#">Guitarras</a></li>
-			<li id="item"><a href="#">Accesorios</a></li>
-			<li id="item"><a href="contacto.html">Contactanos</a></li>
-			<li id="item"><img src="img/carrito.png" class="carrito"></li>
-			<li id="item"><img src="img/lupa.png" class="carrito"></li>
-		</ul>	
-	</nav>
-
-	<section class="carrusel">
-		<img src="img/carrusel1.jpg">
-		<div class="centrado">STREAM YOUR MUSIC</div>
-	</section>
-
-	<div class="cont1">	
-		<p class="sub1">El mundo de las guitarras</p>
-		<p class="p1">Desde el 2012, Rockstars se ha comprometido a crear nuevas experiencias en la música y la interpretación. Una marca joven, pero llena de vitalidad y espíritu innovador, dedicada a la investigación, fabricación y comercialización de instrumentos musicales, especialmente pedales de efectos para guitarra. Nuestro apasionado y dedicado equipo de desarrollo continúa innovando con instrumentos y accesorios accesibles de alta calidad para enriquecer la vida de nuestros clientes. Queremos convertirnos en el líder global de tecnología musical y crear productos divertidos para ayudarte a alcanzar tu sueño musical.</p>
-		<p class="sub3">Productos mas vendidos</p>
-	</div>
-
-	
-	<div class="wrapper">
-		<img class="img5" src="img/guit1.jpg">
-		<img class="img6" src="img/guit2.jpg">
-		<img class="img7" src="img/guit3.jpg">
-	</div>
-
-	<section class="cont2">
-		<p class="sub2">Tienda</p>
-		<img class="img4" src="img/tienda.jpg">
-	</section>
-
-	<footer>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241378.0688920627!2d-98.3330553256289!3d19.04031895847689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0bd5ebc7a3b%3A0x48a6461de494ad95!2sPuebla%2C%20Pue.!5e0!3m2!1ses!2smx!4v1668806283785!5m2!1ses!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
-
-	</footer>
+    
+    <header id="menu">         
+        <nav>
+            <a href="index.html"><img src="img/logo.png" class="logo" alt="logo" width="200" height="50"></a>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="#">GUITARRAS</a></li>
+                <li><a href="#">CONTACTOS</a></li>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+                <li><a href="#"><i class="fas fa-cart-arrow-down"></i></a></li>
+                
+                
+            </ul>
+        </nav>            
+    </header>
 
 
+
+    <section class="presentacion">
+        <div class="flex-item1">
+            <h1>Stream your music</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem reiciendis modi fugit temporibus porro atque, vel placeat impedit repellendus sint!
+            </p>
+            <div>
+                <button class="btn-principal" type ="submit">COMPRAR AHORA</button>
+                <button class="btn-secundario" type ="submit">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+        <div class="flex-item2">
+            <img src="img/caratula2.png" alt="caratula" width="500" height="400">
+        </div>
+    </section>
+
+
+    <div class="wrapper">
+        <section class="servicios" >
+            <div class="titulo-servicios">
+                <h2>El mundo de las guitarras</h2>
+                <p>
+                    Desde el 2012, Rockstars se ha comprometido a crear nuevas experiencias en la música y la interpretación. Una marca joven, pero llena de vitalidad y espíritu innovador, dedicada a la investigación, fabricación y comercialización de instrumentos musicales, especialmente pedales de efectos para guitarra. Nuestro apasionado y dedicado equipo de desarrollo continúa innovando con instrumentos y accesorios accesibles de alta calidad para enriquecer la vida de nuestros clientes. Queremos convertirnos en el líder global de tecnología musical y crear productos divertidos para ayudarte a alcanzar tu sueño musical.
+                </p>
+            </div>
+            <div class="tipo-servicios">
+                <div>
+                    <i class="fas fa-store"></i>
+                    <h3>Tienda fisica</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, est.
+                    </p>
+                </div>
+                <div>
+                    <i class="fas fa-shopping-bag"></i>
+                    <h3>Accesorios</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, est.
+                    </p>
+                </div>
+                <div>
+                    <i class="fas fa-guitar"></i>
+                    <h3>Guitarras</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, est.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p class="footer-content">
+            &copy;Todos los derechos reservados 2022
+        </p>
+    </footer>
 </body>
 </html>
