@@ -26,12 +26,6 @@ a {
   color: rgb(134, 132, 132);
 }
 
-.comprar{
-  text-decoration: none;
-  display: inline-block;
-  color: rgb(254, 253, 253);
-}
-
 img {
   width: 80%;
   height: auto;
@@ -123,8 +117,8 @@ nav ul a:hover {
 }
 
 .presentacion {
-  padding-top: 200px;
-  padding-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -164,6 +158,7 @@ footer {
 }
 footer .footer-content {
   text-align: center;
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
@@ -283,9 +278,14 @@ footer .footer-content {
   top:0; left: 0;
   z-index: -1;
 }
-
+@media screen and (max-width:800px) {
+  .content-modal{
+      width: 90%;
+  }
+}
 
 .productoEnCarrito {
+  
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
   margin: 5px 0;
@@ -311,74 +311,3 @@ footer .footer-content {
   outline: none;
 }
 
-@media screen and (max-width:800px) {
-  .content-modal .productoEnCarrito{
-      width: 95%;
-      height: 70%;
-      display: inline-block;
-  }
-  
-}
-
-.formulario{
-	display: flex;
-	justify-content: center;
-	padding: 50px;
-
-  padding-top: 120px;
-	
-}
-.formulario form{
-	padding: 30px;
-	border-radius: 6px;
-	overflow: hidden;
-	background: #fff;
-	box-shadow: 0px 1px 10px rgb(0,0,0,0.2);
-	cursor: default;
-	transition: all 400ms ease;
-}
-.formulario form h2{
-	text-align: center;
-}
-.boton-formulario{
-  background-color: #C70039;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  padding: 8px;
-}
-.iconos-redes-sociales{
-  width: 100%;
-  text-align: center;
-  padding-bottom: 30px;
-  
-}
-.iconos-redes-sociales img{
-  width: 2rem;
-  height: 2rem;
-  margin: 0px 10px 0px 0px;
-}
-.footer-contact{
-  width: auto;
-  color: white;
-  padding-top: 30px;
-  text-align: center;
-  padding-bottom: 0px;
-  font-size: 1.5rem;
-}
-.footer-ubicacion{
-  width: auto;
-  color: white;
-  padding-bottom: 0px;
-  text-align: center;
-  padding-bottom: 0px;
-  font-size: 1.5rem;
-}
-.ubication{
-  width: auto;
-  color: white;
-  text-align: center;
-  font-size: 13px;
-  font-family: 'Lucida Sans', sans-serif;
-  padding: 1rem;
-}

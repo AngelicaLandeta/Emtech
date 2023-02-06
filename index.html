@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INICIO</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/stockProductos.js"></script>
+    <script src="js/app.js"></script>
     <script src="https://kit.fontawesome.com/8a815a169a.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/92ef0c9ada.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    
-    <header id="menu">         
+
+    <header id="menu">
         <nav>
             <a href="index.html"><img src="img/logo.png" class="logo" alt="logo" width="200" height="50"></a>
             <ul>
                 <li><a href="index.html">INICIO</a></li>
-                <li><a href="#">GUITARRAS</a></li>
-                <li><a href="#">CONTACTOS</a></li>
-                <li><a href="#"><i class="fas fa-search"></i></a></li>
-                <li><a href="#"><i class="fas fa-cart-arrow-down"></i></a></li>
-                
-                
+                <li><a href="productos.html">GUITARRAS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="#">
+                        <label for="btn-modal">
+                            <i class="fas fa-cart-arrow-down"></i>
+                        </label>
+                    </a></li>
+                <li><a href="#"><span id="contadorCarrito">0</span></a></li>
             </ul>
-        </nav>            
+        </nav>
     </header>
-
-
 
     <section class="presentacion">
         <div class="flex-item1">
             <h1>Stream your music</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem reiciendis modi fugit temporibus porro atque, vel placeat impedit repellendus sint!
-            </p>
+            <p>Mejor sensacion al tocar.</p>
+            <p>Guitarra clasica de 41 pulgadas, con cuerpo delgado, sonido clasico y resonancia garantizada. Tono
+                estable y respuesta de cuerdas completas. Con mastiles personalizados.</p>
             <div>
-                <button class="btn-principal" type ="submit">COMPRAR AHORA</button>
-                <button class="btn-secundario" type ="submit">AGREGAR AL CARRITO</button>
+                <button class="btn-principal" type="submit"><a class="comprar" href="productos.html">COMPRAR AHORA</a></button>
+                <button class="btn-secundario" type="submit">AGREGAR AL CARRITO</button>
             </div>
         </div>
         <div class="flex-item2">
@@ -43,13 +50,18 @@
         </div>
     </section>
 
-
     <div class="wrapper">
-        <section class="servicios" >
+        <section class="servicios">
             <div class="titulo-servicios">
                 <h2>El mundo de las guitarras</h2>
                 <p>
-                    Desde el 2012, Rockstars se ha comprometido a crear nuevas experiencias en la música y la interpretación. Una marca joven, pero llena de vitalidad y espíritu innovador, dedicada a la investigación, fabricación y comercialización de instrumentos musicales, especialmente pedales de efectos para guitarra. Nuestro apasionado y dedicado equipo de desarrollo continúa innovando con instrumentos y accesorios accesibles de alta calidad para enriquecer la vida de nuestros clientes. Queremos convertirnos en el líder global de tecnología musical y crear productos divertidos para ayudarte a alcanzar tu sueño musical.
+                    Desde el 2012, Rockstars se ha comprometido a crear nuevas experiencias en la música y la
+                    interpretación. Una marca joven, pero llena de vitalidad y espíritu innovador, dedicada a la
+                    investigación, fabricación y comercialización de instrumentos musicales, especialmente pedales de
+                    efectos para guitarra. Nuestro apasionado y dedicado equipo de desarrollo continúa innovando con
+                    instrumentos y accesorios accesibles de alta calidad para enriquecer la vida de nuestros clientes.
+                    Queremos convertirnos en el líder global de tecnología musical y crear productos divertidos para
+                    ayudarte a alcanzar tu sueño musical.
                 </p>
             </div>
             <div class="tipo-servicios">
@@ -57,31 +69,59 @@
                     <i class="fas fa-store"></i>
                     <h3>Tienda fisica</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, est.
+                        Visita nuestras tiendas y conoce nuestra gran variedad de productos.
                     </p>
                 </div>
                 <div>
                     <i class="fas fa-shopping-bag"></i>
                     <h3>Accesorios</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, est.
+                        Mas de mil productos en exhibicion pastillas, amplificadores, pedales, cuerdas, refacciones y
+                        mas.
                     </p>
                 </div>
                 <div>
                     <i class="fas fa-guitar"></i>
                     <h3>Guitarras</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, est.
+                        Encuentra guitarras eléctricas, acústicas, ukuleles, bajos y amplificadores de tus marcas
+                        favoritas.
                     </p>
                 </div>
             </div>
         </section>
     </div>
 
+    <main id="contenedor-productos"></main>
+
+    <input type="checkbox" id="btn-modal">
+    <div class="container-modal">
+        <div class="content-modal">
+            <div class="btn-cerrar">
+                <label for="btn-modal">
+                    <i class='fa fa-window-close'></i>
+                </label>
+            </div>
+            <div id="carrito-contenedor"></div>
+            <p class="precioProducto">Precio total: $ <span id="precioTotal">0</span></p>
+            <div id="vaciar-carrito" class="btn-cerrar">
+                <label for="btn-modal">Vaciar Carrito</label>
+            </div>
+        </div>
+        <label for="btn-modal" class="cerrar-modal"></label>
+    </div>
+
     <footer>
-        <p class="footer-content">
-            &copy;Todos los derechos reservados 2022
-        </p>
+        <p class="footer-contact">Siguenos</p>
+        <div class="iconos-redes-sociales">
+            <a href src="#"><img src="img/whatsapp.png" alt="whatsapp-icon"></a>
+            <a href src="#"><img src="img/instagram.png" alt="instagram-icon"></a>
+            <a href src="#"><img src="img/tiktok.png" alt="tiktok-icon"></a>
+        </div>
+        <p class="footer-ubicacion">Donde estamos ubicados</p>
+        <p class="ubication">Jose Maria Morelos Norte 452 San Manuel Heroica Puebla de Zaragoza CP.72076</p>
+        <p class="footer-content">&copy;Todos los derechos reservados 2022</p>
     </footer>
 </body>
+
 </html>

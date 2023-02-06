@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIO</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/stockProductos.js" ></script>
+    <script defer src="js/app.js" ></script>
+    <script src="https://kit.fontawesome.com/8a815a169a.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <header id="menu">         
+        <nav>
+            <a href="index.html"><img src="img/logo.png" class="logo" alt="logo" width="200" height="50"></a>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="productos.html">GUITARRAS</a></li>
+                <li><a href="#">CONTACTO</a></li>
+                <li><a href="#">
+                    <label for="btn-modal">
+                        <i class="fas fa-cart-arrow-down"></i>
+                        <span id="contadorCarrito">0</span>
+                    </label>
+                </a></li>
+                
+                
+            </ul>
+        </nav>            
+    </header>
+    
+
+    <main id="contenedor-productos">
+        
+    </main>
+
+    <input type="checkbox" id="btn-modal">
+    <div class="container-modal">
+        <div class="content-modal">
+            <div class="btn-cerrar">
+                <label for="btn-modal">
+                    <i class='fa fa-window-close'></i>
+                </label>
+            </div>
+
+            <div id="carrito-contenedor">
+                
+            </div>
+            <p class="precioProducto">Precio total: $ <span id="precioTotal">0</span></p>
+            <div id="vaciar-carrito" class="btn-cerrar">
+                <label for="btn-modal">Vaciar Carrito</label>
+            </div>
+
+        </div>
+        <label for="btn-modal" class="cerrar-modal"></label>
+    </div>
+
+    <footer>
+        <p class="footer-contact">Siguenos</p>
+        <div class="iconos-redes-sociales">
+            <a href src="#"><img src="img/whatsapp.png" alt="whatsapp-icon"></a>
+            <a href src="#"><img src="img/instagram.png" alt="instagram-icon"></a>
+            <a href src="#"><img src="img/tiktok.png" alt="tiktok-icon"></a>
+        </div>
+        <p class="footer-ubicacion">
+            Donde estamos ubicados
+        </p>
+        <p class="ubication">Jose Maria Morelos Norte 452 San Manuel Heroica Puebla de Zaragoza CP.72076</p>
+        
+        <p class="footer-content">
+            &copy;Todos los derechos reservados 2022
+        </p>
+    </footer>
+</body>
+</html>
