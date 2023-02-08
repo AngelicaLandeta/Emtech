@@ -1,8 +1,8 @@
 let stockProductos=[
 {id:1, nombre:"GUITARRA CLASICA  NIALL HORAN", cantidad: 1,   descripcion: "Tapa de abet, Diapasón de palisandro y puente", precio: 4000,img:"./img/productos/guitar-16.jpg", alt:"guitar-1"},
-{id:2,  nombre:"Guitarra Clásica Campero", cantidad: 1,      descripcion: "Cuerdas de acero con resaque roja y caoba/pino", precio:2528, img:"img/productos/guitar-2.jpg", alt:"guitar-2"},
-{id:3,  nombre:"Acustica Model DEDO Alex Lora", cantidad: 1, descripcion: "Pino, cipres y cueramo dobles Black Top Filter", precio:3500,img:"../img/productos/guitar-3.jpg", alt:"guitar-3"},
-{id:4,  nombre:"Guitarra Clásica Blanca",	cantidad: 1,     descripcion: "Epic, madera, palosanto en aros y tapa posterior", precio:2135,img:'../img/productos/guitar-4.jpg', alt:"guitar-4"},
+{id:2,  nombre:"Guitarra Clásica Campero", cantidad: 1,      descripcion: "Cuerdas de acero con resaque roja y caoba/pino", precio:2528, img:"./img/productos/guitar-2.jpg", alt:"guitar-2"},
+{id:3,  nombre:"Acustica Model DEDO Alex Lora", cantidad: 1, descripcion: "Pino, cipres y cueramo dobles Black Top Filter", precio:3500,img:"./img/productos/guitar-3.jpg", alt:"guitar-3"},
+{id:4,  nombre:"Guitarra Clásica Blanca",	cantidad: 1,     descripcion: "Epic, madera, palosanto en aros y tapa posterior", precio:2135,img:'./img/productos/guitar-4.jpg', alt:"guitar-4"},
 {id:5,  nombre:"Electrica Ibanez Gio GRX40", cantidad: 1,    descripcion: "Cuerpo de álamo y un mástil de arce atornillado", precio:5090,img:'./img/productos/guitar-5.jpg', alt:"guitar-5"},
 {id:6,  nombre:"Electrica Classic Vibe 70s", cantidad: 1,    descripcion: "Perfil de mástil en C, diapasón de 9.5 (241 mm)",	precio: 9550,img:'img/productos/guitar-6.jpg', alt:"guitar-6"},
 {id:7,  nombre:"Eléctrica Stratocaster Zurda", cantidad: 1 , descripcion: "Mastil de maple, mastil Modern C, 22 trastes", precio:17190,img:'img/productos/guitar-7.jpg', alt:"guitar-7"},
