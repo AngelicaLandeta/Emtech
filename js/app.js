@@ -33,7 +33,7 @@ stockProductos.forEach((producto) => {
             </div>
         </div>
         <div class="flex-item2">
-            <img src=${producto.img} alt="">
+            <img src="${producto.img}" alt="">
         </div>
     </section>
     `
