@@ -1,5 +1,5 @@
 let stockProductos=[
-{id:1, nombre:"GUITARRA CLASICA  NIALL HORAN", cantidad: 1,   descripcion: "Tapa de abet, Diapasón de palisandro y puente", precio: 4000,img:"img/productos/guitar-16.jpg", alt:"guitar-1"},
+{id:1, nombre:"GUITARRA CLASICA  NIALL HORAN", cantidad: 1,   descripcion: "Tapa de abet, Diapasón de palisandro y puente", precio: 4000,img:"./img/productos/guitar-16.jpg", alt:"guitar-1"},
 {id:2,  nombre:"Guitarra Clásica Campero", cantidad: 1,      descripcion: "Cuerdas de acero con resaque roja y caoba/pino", precio:2528, img:'img/productos/guitar-2.jpg', alt:"guitar-2"},
 {id:3,  nombre:"Acustica Model DEDO Alex Lora", cantidad: 1, descripcion: "Pino, cipres y cueramo dobles Black Top Filter", precio:3500,img:'img/productos/guitar-3.jpg', alt:"guitar-3"},
 {id:4,  nombre:"Guitarra Clásica Blanca",	cantidad: 1,     descripcion: "Epic, madera, palosanto en aros y tapa posterior", precio:2135,img:'img/productos/guitar-4.jpg', alt:"guitar-4"},
