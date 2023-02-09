@@ -201,7 +201,13 @@ footer .footer-content {
   .presentacion div h1, .presentacion div p {
     padding: 0;
   }
-}/*# sourceMappingURL=main.css.map */
+  nav ul a {
+    padding: 4px;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+}
+/*# sourceMappingURL=main.css.map */
 
 /*:::Boton-Modal:::*/
 .boton-modal{
@@ -324,7 +330,7 @@ footer .footer-content {
 	display: flex;
 	justify-content: center;
 	padding: 50px;
-  padding-top: 120px;
+  padding-top: 160px;
 	
 }
 .formulario form{
