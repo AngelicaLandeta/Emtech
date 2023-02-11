@@ -35,6 +35,7 @@ a {
 img {
   width: 80%;
   height: auto;
+  
 }
 
 nav, .servicios, .presentacion, .footer-content {
@@ -129,6 +130,7 @@ nav ul a:hover {
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
+  
 }
 .presentacion .flex-item2 {
   text-align: center;
